@@ -1,0 +1,17 @@
+Test Title: 
+Clicking a content and load it
+
+Test Description: 
+Script that checks clicking an arbitrary content, loads the content and works without error
+
+Test Steps:
+1. Go to https://www.bongobd.com
+2. Scroll down to ""বঙ্গ লাইভ টিভি""
+3. Click On "এসএ টিভি"
+4. Check the URL of the current page and the expected page
+
+Expected Result:
+Contents must be loaded successfully 
+
+Actual Result:
+Contents successfully loaded
