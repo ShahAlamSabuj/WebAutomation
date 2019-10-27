@@ -1,6 +1,5 @@
 package webAutomationBongo;
 
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -16,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class ConfirmLogin {
 
-	public static void main(String args[])throws InterruptedException, IOException  {
+	public static void main(String args[])throws InterruptedException {
 		
 		// chromedriver.exe must be in the following local directory
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver_win32\\chromedriver.exe");
@@ -44,7 +43,7 @@ public class ConfirmLogin {
 		driver.switchTo().window(newWindowHandler); 
 		
 		// inserting valid phone number
-		driver.findElement(By.id("u_0_6q")).sendKeys("1676218040"); 
+		driver.findElement(By.id("u_0_6q")).sendKeys("1731652213"); 
 		driver.findElement(By.id("u_0_6r")).click();
 		
 		// wait for 30 seconds to input the OTP
@@ -73,8 +72,9 @@ public class ConfirmLogin {
 		}
 		else
 			System.out.println("login failed");
-		              
-		Thread.sleep(50000);
+		    
+		// wait for 30 seconds and close the browser
+		Thread.sleep(30000);
 		driver.close();
 	}
 }
